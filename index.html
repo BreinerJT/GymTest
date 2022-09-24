@@ -12,9 +12,9 @@
 </head>
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg bg-dark px-4 py-2">
+  <nav class="navbar navbar-expand-lg bg-dark px-4 py-2">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand text-bg-dark" href="#">
         <img class="logo" src="./public/favicon.png" alt="">
         I - FIT
       </a>
@@ -22,13 +22,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active text-bg-dark" aria-current="page" href="#inicio">Inicio</a>
+        <div class="navbar-nav gap-2">
           <a class="nav-link text-bg-dark" href="#equipo">Nuestro Equipo</a>
           <a class="nav-link text-bg-dark" href="#servicios">Servicios</a>
           <a class="nav-link text-bg-dark" href="#contactanos">Contactanos</a>
-          <a href="login.html" class="nav-link text-bg-dark">Login</a>
-          <a href="register.html" class="nav-link text-bg-dark">Register</a>
+          <a href="login.html" class="btn btn-danger">Inicia sesion</a>
+          <a href="register.html" class="btn btn-danger">Registrate</a>
         </div>
       </div>
     </div>
@@ -40,7 +39,10 @@
     <video muted autoplay loop class="video-container">
       <source src="./public/hero.mp4" type="video/mp4">
     </video>
-    <h1>Hola mundo</h1>
+    <div class="flex flex-col flex-wrap text-center gap-5">
+      <h1>Ejercita tu mente, cuerpo y alma</h1>
+      <a href="register.html" class="btn btn-danger mt-4">Registrate</a>
+    </div>
     <button class="video-btn">
       <span class="play-btn">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
@@ -58,8 +60,8 @@
 
       <!-- NUESTRO EQUIPO -->
 
-  <h2>Nuestro equipo</h2>
-  <div class="card-group" id="equipo">
+  <h2 class="mt-5 ps-4">Nuestro equipo</h2>
+  <div class="card-group px-4 gap-1" id="equipo">
     <div class="card">
       <img src="./public/favicon.png" class="card-img-top" alt="...">
       <div class="card-body">
@@ -88,8 +90,8 @@
 
         <!-- SERVICIOS -->
   
-  <h2>Servicios</h2>
-  <div class="card-group" id="servicios">
+  <h2 class="mt-5 ps-4">Servicios</h2>
+  <div class="card-group px-4 gap-1" id="servicios">
     <div class="card">
       <img src="./public/favicon.png" class="card-img-top" alt="...">
       <div class="card-body">
@@ -118,8 +120,8 @@
 
           <!-- TESTIMONIOS -->
 
-  <h2>Testimonios</h2>
-  <div class="card-group">
+  <h2 class="mt-5 ps-4">Testimonios</h2>
+  <div class="card-group px-4 gap-1">
     <div class="card">
       <img src="./public/favicon.png" class="card-img-top" alt="...">
       <div class="card-body">
@@ -145,15 +147,10 @@
       </div>
     </div>
   </div>
-
-  
-
-
-
   <!--  -->
 
-  <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid my-5">
+  <!-- FOOTER -->
+<div class="container-fluid mt-5 p-0" id="contactanos">
 
   <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
     <!-- Grid container -->
@@ -161,18 +158,9 @@
       <!--Grid row-->
       <div class="row mt-4">
         <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">About company</h5>
-
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti.
-          </p>
-
-          <p>
-            Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-            molestias.
-          </p>
+        <div class="text-center mx-auto col-lg-4 col-md-12 mb-4 mb-md-0">
+          
+          <img src="./public/favicon.png" alt="logo" style="width: 300px;">
 
           <div class="mt-4">
             <!-- Facebook -->
@@ -188,25 +176,17 @@
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-
-          <div class="form-outline form-white mb-4">
-            <input type="text" id="formControlLg" class="form-control form-control-lg">
-            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
-          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+          <h5 class="text-uppercase mb-4 pb-1">Contactanos:</h5>
 
           <ul class="fa-ul" style="margin-left: 1.65em;">
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Bogotá, calle 9b cra 2# 17 - 12</span>
             </li>
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">I-fit@google.com</span>
             </li>
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
-            </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 57 305 456 1265</span>
             </li>
           </ul>
         </div>
@@ -214,21 +194,17 @@
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Opening hours</h5>
+          <h5 class="text-uppercase mb-4">Horario:</h5>
 
           <table class="table text-center text-white">
             <tbody class="font-weight-normal">
               <tr>
-                <td>Mon - Thu:</td>
-                <td>8am - 9pm</td>
+                <td>Lunes - Sabados:</td>
+                <td>7am - 7pm</td>
               </tr>
               <tr>
-                <td>Fri - Sat:</td>
-                <td>8am - 1am</td>
-              </tr>
-              <tr>
-                <td>Sunday:</td>
-                <td>9am - 10pm</td>
+                <td>Domigos:</td>
+                <td>7am - 12m</td>
               </tr>
             </tbody>
           </table>
@@ -245,46 +221,39 @@
 
       
       <div>
-        <div class="d-flex flex justify-content-around mb-4">
+        <div class="d-flex flex-wrap justify-content-around gap-2 mb-4">
           <div>
-            Ana Rincon Loaiza
-            <a href="" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
+            <h6>Ana Rincon</h6>
+            <a href="https://www.linkedin.com/in/ana-milena-7b1705a2" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/jhonfmen" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
           </div>
           <div>
-            Brayan xxxx
-            <a href="" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
-          </div>
-          <div>
-            Breiner Torres Nieves
-            <a href="" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+            <h6>Breiner Torres</h6>
+            <a href="https://www.linkedin.com/in/breinerjtorres" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/BreinerJT" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
           </div>
-        </div>
-        <div class="d-flex flex justify-content-evenly">
           <div>
-            Esteban Noreña Giraldo
-            <a href="" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/esnogi" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
+            <h6>Jhon Faber</h6>
+            <a href="https://www.linkedin.com/in/jhon-mendoza-84b4a5238" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/jhonfmen" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-evenly">
+          <div>
+            <h6>Brayan xxxx</h6>
+            <a href="https://www.linkedin.com/in/" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/BrianGonzalezBeltran" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
           </div>
           <div>
-            Jhon Faber Mendoza
-            <a href="" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/jhonfmen" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
+            <h6>Esteban Noreña</h6>
+            <a href="https://www.linkedin.com/in/esteban-norena-giraldo-164070227" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/esnogi" type="button" class="btn btn-floating btn-dark"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
   </footer>
   
 </div>
-<!-- End of .container -->
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
