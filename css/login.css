@@ -16,8 +16,11 @@ html{
   color: white;
   padding: 2rem;
 }
+.title{
+  margin-top: 2.5rem;
+}
 h1, h2{
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 img{
   height: 100%;
@@ -25,7 +28,6 @@ img{
 form{
  display: flex;
  flex-direction: column;
- padding: 2rem;
 }
 label{
   padding-top: 1rem;
@@ -51,6 +53,7 @@ a{
   padding-top: 1rem;
   text-decoration: underline;
   cursor: pointer;
+  color: white;
 }
 button{
   margin: 1.5rem 0;
@@ -61,18 +64,43 @@ button{
   color: red;
   font-weight: bold;
   font-size: 1.1rem;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.back-btn{
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 1rem;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.back-btn:hover{
+  color: white;
+  background-color: red;
+}
+.login-btn:hover{
+  color: white;
+  background-color: red;
 }
 hr{
   color: red;
   background-color: red;
   background: red;
 }
-
+.desktop-img {
+  max-width: 500px;
+}
 .mobile-img {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .data-container{
     padding: 1rem;
   }
@@ -80,11 +108,10 @@ hr{
     flex-direction: column;
   }
   h1, h2{
-    padding-right: 1rem;
+    padding: 0.5rem;
   }
   h1, h2, label {
     font-size: 1.25rem;
-
   }
   form{
     padding: 1rem;
@@ -94,7 +121,9 @@ hr{
     margin: 1.5rem auto;
     padding: 0.5rem 1rem;
   }
-
+  .back-btn{
+    top: 38%;
+  }
   .desktop-img {
     display: none;
   }

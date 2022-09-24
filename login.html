@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Login - I-Fit</title>
+  <link rel="shortcut icon" href="./public/favicon.png" type="image/png">
   <link rel="stylesheet" href="./css/login.css">
+  <script src="https://kit.fontawesome.com/bd831fad42.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
@@ -13,7 +15,8 @@
       <img src="./public/heroForms.png" />
     </picture>
     <div class="data-container">
-      <h1>Bienvenido</h1>
+      <a href="index.html" class="back-btn"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+      <h1 class="title">Bienvenido</h1>
       <h2>Ingresa tu informacion para acceder.</h2>
       <hr color="red" />
       <form>
@@ -25,10 +28,10 @@
           Contraseña
           <input type="text" placeholder="Inserte su contraseña.">
         </label>
-        <a>
-          ¿Olvidaste tu contraseña?
+        <a href="register.html">
+          ¿Aun no tienes cuenta? Registrate!
         </a>
-        <button>
+        <button class="login-btn">
           Ingresar
         </button>
       </form>
