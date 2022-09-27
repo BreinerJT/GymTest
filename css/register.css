@@ -61,9 +61,14 @@ input::placeholder {
 
 p {
   text-align: right;
-  padding-right: 7.8rem;
+  padding: 0;
   padding-top: 1rem;
-  text-decoration: underline;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  color: white;
 }
 
 button {
@@ -147,7 +152,7 @@ hr {
   }
 
   .back-btn {
-    top: 42%;
+    top: 38%;
   }
 
   .desktop-img {
