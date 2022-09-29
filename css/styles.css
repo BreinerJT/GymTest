@@ -46,10 +46,10 @@ header::after {
 }
 
 .down-btn {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: red;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: 2rem;
   left: 48%;
   border: transparent;
   background: transparent;
@@ -64,20 +64,6 @@ header::after {
 
 .down-btn:hover {
   color: red;
-}
-
-@keyframes bounce {
-
-  0%,
-  100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
 }
 
 .video-btn:hover,
@@ -99,6 +85,13 @@ header::after {
 
 h1 {
   color: white;
+}
+
+h2 {
+  border-bottom: 4px solid red;
+  display: inline-block;
+  padding: 2.5rem 0 10px 1rem;
+  text-align: center;
 }
 
 a {
@@ -126,15 +119,25 @@ a {
   }
 
   .down-btn {
-    font-size: 3.5rem;
-    bottom: 2.5rem;
-    left: 80%;
+    font-size: 2.5rem;
+    bottom: 1.75rem;
+    left: 90%;
   }
 }
 
+@keyframes bounce {
 
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
 
-/* ================================================= */
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
 
 #footer {
   color: #fff;
